@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vagetarian Dishesh</title>
+    <link rel="stylesheet" href="styleVagetarian.css" />
+    <style>
+      .main-body {
+  width: 90%;
+  margin: auto;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h4 {
+  color: white;
+  font-family: "Baloo Bhai", cursive;
+}
+
+nav img {
+  width: 50px;
+  position: relative;
+  z-index: 10;
+}
+
+.nav ul {
+  display: flex;
+  font-family: "Baloo Bhai", cursive;
+}
+
+.nav ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+.nav ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.nav ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 70px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.585);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.box {
+  height: 250px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.techpanda {
+  text-decoration: none;
+}
+
+.dishesh {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.dishesh-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 10px;
+  margin-left: 38%;
+  color: green;
+}
+
+.dishesh-main {
+  width: 80%;
+  margin: auto;
+}
+
+.dishesh-main-text {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.dishesh-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dishesh-img img {
+  height: 160px;
+  width: 130px;
+}
+
+.box img {
+  height: 60%;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.rating img {
+  height: 15px;
+  width: 15px;
+}
+
+/* .rating-text{
+        margin-bottom: 1px;
+        margin-top: 10px;
+      } */
+
+.rating {
+  margin-top: -10px;
+}
+
+.para-1 {
+  margin-top: -13px;
+}
+
+.para-2 {
+  margin-top: -12px;
+}
+
+.box img:hover {
+  transform: scale(1.1);
+  transition-duration: 200ms;
+}
+
+.box_title_container {
+  display: flex;
+  flex-direction: column;
+  padding: -0.5rem;
+}
+
+.box_title {
+  color: orange;
+  /* margin: 5px; */
+  height: 1px;
+  margin-top: 1px;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  margin: auto;
+  padding: 34px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
+footer .question {
+  padding: 34px 0;
+}
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav">
+        <span
+          ><div class="logo">
+            <img width="53" src="http://127.0.0.1:5501/img/logo.png" alt="" />
+            <a class="techpanda" href="indexMain.html">
+              <h4>Tech Panda</h4>
+            </a>
+          </div>
+        </span>
+        <ul>
+          <li class="item"><a href="#home"> Search</a></li>
+          <li class="item"><a href="login.html">Log In</a></li>
+          <li class="item"><a href="#">Help</a></li>
+          <li class="item"><a href="cart.html">Cart</a></li>
+          <li class="item"><a href="timetable.html">TimeTable</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-body">
+      <div class="container">
+        <div class="vagetarian-dishesh">
+          <h2 class="dishesh-heading">Vagatarian Dishesh</h2>
+          <div class="dishesh">
+            <div class="box box-1">
+              <img src="https://t4.ftcdn.net/jpg/06/03/64/07/360_F_603640779_QNVbk3tSd5nEU1uAO7RifpHUjLZCsjDJ.jpg" alt="" />
+              <div class="box_title_container">
+                <h2 class="box_title">Potato Dish</h2>
+                <div class="rating">
+                  <h3 class="rating-text">4.1 <img src="/images/rating.webp" alt="" /> 36 min</h3>
+                </div>
+                <div class="card_paragraph">
+                    <p class="para-1" >Vagetable</p>
+                    <p class="para-2" >Ahmedabad</p>
+                  </div>
+              </div>
+            </div>
+            <div class="box box-2">
+              <div class="box box-1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLz_4fO3A-MDa0uY2nv_6N-Q9enkcOO2OYwA&usqp=CAU" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Ratatouille</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.3 <img src="/images/rating.webp" alt="" /> 33 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                      <p class="para-1" >Vagetable</p>
+                      <p class="para-2" >Vadodara</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-3">
+              <div class="box box-1">
+                <img src="https://st2.depositphotos.com/5653638/11520/i/450/depositphotos_115207410-stock-photo-indian-thali-indian-food-thali.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Stir-fried Vegetables </h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.6 <img src="/images/rating.webp" alt="" /> 34 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Vagetable</p>
+                    <p class="para-2" >Patan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-4">
+              <div class="box box-1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMza4Lu-5dqZZ66-J3f9PYA6L6pcrOP7S64Q&usqp=CAU" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Aloo Gobi </h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.8 <img src="/images/rating.webp" alt="" /> 33 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Vagetable</p>
+                    <p class="para-2" >Panthawada</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="non-vagetarian-dishesh">
+          <div class="dishesh">
+            <div class="box box-5">
+              <div class="box box-1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Vegetarian_Andhra_Meal.jpg/1200px-Vegetarian_Andhra_Meal.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Caprese Salad </h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.4 <img src="/images/rating.webp" alt="" /> 30 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Vagetable</p>
+                    <p class="para-2" >Ahmedabad</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-6">
+              <div class="box box-1">
+                <img src="https://static.toiimg.com/thumb/104876720.cms?width=400&height=300&resizemode=4&imgsize=102710" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Gado Gado</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.9 <img src="/images/rating.webp" alt="" /> 41 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Vagetable</p>
+                    <p class="para-2" >Deesa</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-7">
+              <div class="box box-1">
+                <img src="https://st4.depositphotos.com/19960896/27843/i/450/depositphotos_278432578-stock-photo-indian-food-platter-hindu-veg.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Potato Dish</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.1 <img src="/images/rating.webp" alt="" /> 36 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Vagetable</p>
+                    <p class="para-2" >Jamnagar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-8">
+              <div class="box box-1">
+                <img src="https://static.vecteezy.com/system/resources/previews/037/266/322/non_2x/ai-generated-popular-indian-non-vegetarian-food-free-photo.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Spanakopita </h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.7 <img src="/images/rating.webp" alt="" /> 36 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Vagetable</p>
+                    <p class="para-2" >Rajkot</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="un-hygrnic-dishesh">
+          <div class="dishesh">
+            <div class="box box-9">
+              <div class="box box-1">
+                <img src="https://www.shutterstock.com/image-photo/top-view-vegetable-salad-organic-260nw-2331210613.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Kimchi </h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.1 <img src="/images/rating.webp" alt="" /> 30 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Vagetable</p>
+                    <p class="para-2" >Junagadh</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-10">
+              <div class="box box-1">
+                <img src="https://static.vecteezy.com/system/resources/previews/037/266/322/non_2x/ai-generated-popular-indian-non-vegetarian-food-free-photo.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Moussaka</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.0 <img src="/images/rating.webp" alt="" /> 31 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Vagetable</p>
+                    <p class="para-2" >Surat</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-11">
+              <div class="box box-1">
+                <img src="https://st2.depositphotos.com/5653638/11520/i/450/depositphotos_115207410-stock-photo-indian-thali-indian-food-thali.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Vegetable Paella</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.4 <img src="/images/rating.webp" alt="" /> 42 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Vagetable</p>
+                    <p class="para-2" >navsari</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-12">
+              <div class="box box-1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Vegetarian_Andhra_Meal.jpg/1200px-Vegetarian_Andhra_Meal.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Vegetable Curry</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.4 <img src="/images/rating.webp" alt="" /> 30 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Vagetable</p>
+                    <p class="para-2" >Anand</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="un-hygrnic-dishesh">
+          <div class="dishesh">
+            <div class="box box-13">
+              <div class="box box-1">
+                <img src="https://t4.ftcdn.net/jpg/06/03/64/07/360_F_603640779_QNVbk3tSd5nEU1uAO7RifpHUjLZCsjDJ.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Vegetable Tempura</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.1 <img src="/images/rating.webp" alt="" /> 36 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Vagetable</p>
+                    <p class="para-2" >Ahmedabad</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-14">
+              <div class="box box-1">
+                <img src="https://www.shutterstock.com/image-photo/top-view-vegetable-salad-organic-260nw-2331210613.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Chana Masala</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.1 <img src="/images/rating.webp" alt="" /> 36 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Vagetable</p>
+                    <p class="para-2" >Ahmedabad</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-15">
+              <div class="box box-1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLz_4fO3A-MDa0uY2nv_6N-Q9enkcOO2OYwA&usqp=CAU" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Vegetable Pad Thai</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.1 <img src="/images/rating.webp" alt="" /> 36 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Vagetable</p>
+                    <p class="para-2" >Ahmedabad</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-16">
+              <div class="box box-1">
+                <img src="https://www.shutterstock.com/image-photo/top-view-vegetable-salad-organic-260nw-2331210613.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Vegetable Dumplings (Chinese)</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.1 <img src="/images/rating.webp" alt="" /> 36 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Vagetable</p>
+                    <p class="para-2" >Ahmedabad</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="un-hygrnic-dishesh"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="question">Questions? Call 000-800-919-1694</div>
+      <div class="footer">
+        <div class="footer-item">
+          <a href="FAQ">FAQ</a>
+          <a href="FAQ">Privacy</a>
+          <a href="FAQ">Corporate Information</a>
+          <a href="FAQ">Speed Test</a>
+        </div>
+
+        <div class="footer-item">
+          <a href="FAQ">Only on Tech Panda</a>
+          <a href="FAQ">Help Centre</a>
+          <a href="FAQ">Media Centre</a>
+          <a href="FAQ">Jobs</a>
+        </div>
+
+        <div class="footer-item">
+          <a href="FAQ">Terms of Use</a>
+          <a href="FAQ">Cookie Preferences</a>
+          <a href="FAQ">Contact Us</a>
+          <a href="FAQ">Legal Notices</a>
+        </div>
+
+        <div class="footer-item">
+          <a href="FAQ">Account</a>
+          <a href="FAQ">Invester Relations</a>
+          <a href="FAQ">Ways To Use</a>
+        </div>
+      </div>
+    </footer>
+     
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Housewives Kitchen Sector Job Application</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #d2ddd9; /* Background color for the entire page */
+        background-image: url(https://as1.ftcdn.net/v2/jpg/01/75/33/72/1000_F_175337209_ezup2DQJQWgam57urkcwqEUV6B3ATKmy.jpg); /* Background image */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        opacity: 0.9; /* Adjust opacity value as needed */
+      }
+      h1 {
+        text-align: center;
+      }
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background: rgb(214, 223, 212); /* Background color with opacity */
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(2, 1, 1, 1);
+      }
+      fieldset {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      legend {
+        font-weight: bold;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      textarea {
+        font-size: 16px; /* Increase font size for all textareas */
+      }
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Housewives Kitchen Sector Job Application</h1>
+    <form action="submit_application.php" method="POST">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required /><br />
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" /><br />
+
+        <label for="zipCode">Zip Code:</label>
+        <input type="text" id="zipCode" name="zipCode" /><br />
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required /><br />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Availability</legend>
+        <label for="availability">Days/Hours Available to Work:</label>
+        <textarea
+          id="availability"
+          name="availability"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Previous Experience</legend>
+        <label for="previousExperience">Previous Experience:</label>
+        <textarea
+          id="previousExperience"
+          name="previousExperience"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Skills</legend>
+        <label for="cookingSkills">Cooking Skills:</label>
+        <textarea
+          id="cookingSkills"
+          name="cookingSkills"
+          rows="4"
+          cols="50"
+          required
+        ></textarea
+        ><br />
+
+        
+
+        <label for="timeManagement">Time Management:</label>
+        <textarea
+          id="timeManagement"
+          name="timeManagement"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+      </fieldset>
+
+        <label for="mealPlanning">Meal Planning Experience:</label>
+        <textarea
+          id="mealPlanning"
+          name="mealPlanning"
+          rows="4"
+          cols="50"
+        ></textarea
+        ><br />
+
+        <label for="passionateAbout">Passionate About:</label>
+        <textarea
+          id="passionateAbout"
+          name="passionateAbout"
+          rows="4"
+          cols="50"
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="additionalInfo">Additional Information:</label><br />
+        <textarea
+          id="additionalInfo"
+          name="additionalInfo"
+          rows="4"
+          cols="50"
+        ></textarea>
+      </fieldset>
+
+      <input type="submit" value="Submit Application" />
+    </form>
+  </body>
+</html>

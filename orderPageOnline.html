@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+        * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e3e7e8;
+  font-family: system-ui;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  position: fixed;
+  z-index: 10;
+  justify-content: space-between;
+  height: 90px;
+}
+.techapanda {
+  text-decoration: none;
+  color: white;
+  font-family: "Baloo Bhai", cursive;
+}
+.disheshHeading {
+  text-decoration: none;
+  color: green;
+}
+.disheshHeading h2 {
+  padding-bottom: 20px;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 82%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+/* navigation bar : logo and items */
+#logo {
+  margin: 10px 34px;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo img {
+  height: 50px;
+  margin: 3px 6px;
+}
+/* navigation bar : list styling */
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai", cursive;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.first {
+  height: 80vh;
+}
+
+.image img {
+  height: 60vh;
+  width: 45vw;
+  margin-top: 73px;
+  text-align: left;
+  border-radius: 15px;
+}
+
+.second {
+  margin-top: 73px;
+  background-color: #453e3b;
+  height: 85vh;
+  border-radius: 15px;
+  width: 30vw;
+}
+
+.heading {
+  color: chocolate;
+}
+
+.ing {
+  font-size: 1.2rem;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  color: white;
+}
+
+.heading1 {
+  color: darkgreen;
+  margin-top: 20px;
+}
+
+.det {
+  font-size: 1.2rem;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  color: white;
+}
+
+.img-det {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+.img-det h3 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.rating img {
+  height: 20px;
+  width: 20px;
+}
+
+.rating h2 {
+  font-size: 25px;
+}
+
+.img-det p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.separation {
+  height: 5px;
+  background-color: rgb(71, 70, 70);
+  position: relative;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+  /* display: flex; */
+}
+
+.paying-sub {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.button {
+  width: 100px;
+  background-color: #fff;
+  color: black;
+}
+
+.online {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.pay-button{
+  height: 40px;
+  width: 130px;
+  background-color: green;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 20px;
+}
+
+.form-Location {
+  height: 50px;
+  width: 500px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.form-name {
+  width: 300px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  margin: auto;
+  padding: 34px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
+footer .question {
+  padding: 34px;
+}
+
+.profile {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.profile img {
+  width: 55px;
+}
+
+.svg-img {
+  width: 20px;
+}
+
+.reaction {
+  margin-top: 10px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.585);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #160b0b;
+  border-radius: 10px;
+}
+
+.review1 {
+  margin-top: 10px;
+}
+
+.separation1 {
+  height: 3px;
+  background-color: rgb(71, 70, 70);
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #2980b9;
+}
+
+.rev-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rev-rating img {
+  height: 20px;
+  width: 20px;
+}
+
+.rating-time{
+  display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <div id="logo">
+      <div class="logo-box">
+        <img src="images/logo.png" alt="MyOnlineMeal.com" />
+        <a class="techapanda" href="./indexMain.html">
+          <h4>Tech Panda</h4>
+        </a>
+      </div>
+    </div>
+
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="/login-page2/Modern-Login-master/Modern-Login-master/index.html">Log In</a></li>
+      <li class="item"><a href="#client-section">Help</a></li>
+      <li class="item"><a href="addtocardv2-main/index.html">Cart</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="first">
+      <div class="image">
+        <img id="dishImage" src="" alt="" />
+      </div>
+      <div class="img-det">
+        <h3 id="dishName">Dish name</h3>
+        <div id="dishRating" class="rating">
+          
+        </div>
+        <p id="dishType">Veg</p>
+        <p id="dishCity">From which city</p>
+      </div>
+    </div>
+
+    <div class="second">
+      <div class="heading">
+        <h2>Ingridients:</h2>
+      </div>
+      <div class="ing">
+        <!-- Ingredients will be dynamically inserted here -->
+      </div>
+      <div class="details">
+        <div class="heading1">
+          <h2>Details:</h2>
+        </div>
+        <div class="det">
+          <!-- Details will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="separation"></div>
+  <div class="main">
+    <div class="sub-main">
+      <div class="online">
+        <h2>Order Online:</h2>
+        <div class="name">
+          <h3>
+            Enter Your Name:
+            <input
+              class="form-name"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Full Name Here"
+              required
+            />
+          </h3>
+        </div>
+        <div class="name">
+          <h3>
+            Enter Your Number:
+            <input
+              class="form-name"
+              type="number"
+              id="name"
+              name="name"
+              placeholder="Your Numer Here"
+              required
+            />
+          </h3>
+        </div>
+        <div class="name">
+          <h3>
+            Enter Your Location Here:
+            <input
+              class="form-Location"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Location Here"
+              required
+            />
+          </h3>
+        </div>
+        <div class="name">
+          <h3>
+            Enter Your Second Number:
+            <input
+              class="form-name"
+              type="number"
+              id="name"
+              name="name"
+              placeholder="Your Second Numer Here"
+              required
+            />
+          </h3>
+        </div>
+        <div class="name">
+          <h3>
+            Enter Your Name:
+            <input
+              class="form-name"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Second Numer Here"
+              required
+            />
+          </h3>
+        </div>
+        <a class="pay-button" href="/newcode/payment.html">
+          <div><button class="pay-button">Pay Now</button></div>
+        </a>
+      </div>
+      
+    </div>
+    <div class="reviews">
+      <h2>Reviews:</h2>
+      <div class="review1">
+        <div class="profile">
+          <img src="http://127.0.0.1:5501/img/profile.svg" alt="" />
+          <p>Vishal Luhar</p>
+        </div>
+        <div class="rev-rating">
+          <h3>4.6</h3>
+          <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 3 Days Ago
+        </div>
+        <div class="review-det">
+          <p>
+            Ekdum Chutiya Jevu Hai Lejo Na Aa Khavathi Tamari GF Tamne Chhodi
+            Ne Jati raheshe Karan K Aana Par Mara ek Bangali Friend E Kala
+            Jadu Karyu 6
+          </p>
+        </div>
+        <div class="reaction">
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/MZ97VQKWEN/thumb-up-MZ97VQKWEN.svg" alt="" />
+          HelpFul
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/TCAHK5GZQB/thumb-down-TCAHK5GZQB.svg" alt="" />
+          Disagree
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/29LRKSXWG6/comment-29LRKSXWG6.svg" alt="" />
+          comment
+        </div>
+      </div>
+
+      <div class="separation1"></div>
+        
+      <div class="review1">
+        <div class="profile">
+          <img src="http://127.0.0.1:5501/img/profile.svg" alt="" />
+          <p>Aniket Dhamecha</p>
+        </div>
+        <div class="rev-rating">
+          <h3>4.0</h3>
+          <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 3 Days Ago
+        </div>
+        <div class="review-det">
+          <p>
+            A comprehensive collection of recipes catering to diverse tastes,
+            with clear instructions and helpful tips for both novice and
+            experienced cooks.
+          </p>
+        </div>
+      </div>
+        <div class="reaction">
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/MZ97VQKWEN/thumb-up-MZ97VQKWEN.svg" alt="" />
+          HelpFul
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/TCAHK5GZQB/thumb-down-TCAHK5GZQB.svg" alt="" />
+          Disagree
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/29LRKSXWG6/comment-29LRKSXWG6.svg" alt="" />
+          comment
+        </div>
+      </div>
+
+      <div class="separation1"></div>
+
+      <div class="review1">
+        <div class="profile">
+          <img src="http://127.0.0.1:5501/img/profile.svg" alt="" />
+          <p>Mahendra Chaudhary</p>
+        </div>
+        <div class="rev-rating">
+          <h3>4.1</h3>
+          <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 3 Days Ago
+        </div>
+        <div class="review-det">
+          <p>
+            A visually appealing platform showcasing mouthwatering dishes from
+            around the world, accompanied by user-friendly navigation and
+            informative articles on culinary techniques.
+          </p>
+        </div>
+        <div class="reaction">
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/MZ97VQKWEN/thumb-up-MZ97VQKWEN.svg" alt="" />
+          HelpFul
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/TCAHK5GZQB/thumb-down-TCAHK5GZQB.svg" alt="" />
+          Disagree
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/29LRKSXWG6/comment-29LRKSXWG6.svg" alt="" />
+          comment
+        </div>
+      </div>
+
+      <div class="separation1"></div>
+
+      <div class="review1">
+        <div class="profile">
+          <img src="http://127.0.0.1:5501/img/profile.svg" alt="" />
+          <p>Meet Makawana</p>
+        </div>
+        <div class="rev-rating">
+          <h3>4.7</h3>
+          <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 3 Days Ago
+        </div>
+        <div class="review-det">
+          <p>
+            An innovative food website that offers unique fusion recipes,
+            featuring creative flavor combinations and stunning food
+            photography.
+          </p>
+        </div>
+        <div class="reaction">
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/MZ97VQKWEN/thumb-up-MZ97VQKWEN.svg" alt="" />
+          HelpFul
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/TCAHK5GZQB/thumb-down-TCAHK5GZQB.svg" alt="" />
+          Disagree
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/29LRKSXWG6/comment-29LRKSXWG6.svg" alt="" />
+          comment
+        </div>
+      </div>
+
+      <div class="separation1"></div>
+
+      <div class="review1">
+        <div class="profile">
+          <img src="http://127.0.0.1:5501/img/profile.svg" alt="" />
+          <p>Mihir garsaniya</p>
+        </div>
+        <div class="rev-rating">
+          <h3>4.5</h3>
+          <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 3 Days Ago
+        </div>
+        <div class="review-det">
+          <p>
+            A go-to destination for health-conscious individuals, offering
+            nutritious recipes, meal plans, and expert advice on mindful
+            eating.
+          </p>
+        </div>
+        <div class="reaction">
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/MZ97VQKWEN/thumb-up-MZ97VQKWEN.svg" alt="" />
+          HelpFul
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/TCAHK5GZQB/thumb-down-TCAHK5GZQB.svg" alt="" />
+          Disagree
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/29LRKSXWG6/comment-29LRKSXWG6.svg" alt="" />
+          comment
+        </div>
+      </div>
+
+      <div class="separation1"></div>
+
+      <div class="review1">
+        <div class="profile">
+          <img src="http://127.0.0.1:5501/img/profile.svg" alt="" />
+          <p>Arshad</p>
+        </div>
+        <div class="rev-rating">
+          <h3>1.0</h3>
+          <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 3 Days Ago
+        </div>
+        <div class="review-det">
+          <p>
+            A community-driven food website fostering interaction among food
+            enthusiasts, with user-generated content ranging from traditional
+            family recipes to modern culinary experiments.
+          </p>
+        </div>
+        <div class="reaction">
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/MZ97VQKWEN/thumb-up-MZ97VQKWEN.svg" alt="" />
+          HelpFul
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/TCAHK5GZQB/thumb-down-TCAHK5GZQB.svg" alt="" />
+          Disagree
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/29LRKSXWG6/comment-29LRKSXWG6.svg" alt="" />
+          comment
+        </div>
+      </div>
+
+      <div class="separation1"></div>
+
+      <div class="review1">
+        <div class="profile">
+          <img src="http://127.0.0.1:5501/img/profile.svg" alt="" />
+          <p>Yug Joshi</p>
+        </div>
+        <div class="rev-rating">
+          <h3>5.0</h3>
+          <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 3 Days Ago
+        </div>
+        <div class="review-det">
+          <p>
+            An authoritative resource for foodies seeking in-depth reviews of
+            restaurants, food products, and kitchen gadgets, providing
+            valuable insights for informed decision-making.
+          </p>
+        </div>
+        <div class="reaction">
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/MZ97VQKWEN/thumb-up-MZ97VQKWEN.svg" alt="" />
+          HelpFul
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/TCAHK5GZQB/thumb-down-TCAHK5GZQB.svg" alt="" />
+          Disagree
+          <img class="svg-img" src="https://www.reshot.com/preview-assets/icons/29LRKSXWG6/comment-29LRKSXWG6.svg" alt="" />
+          comment
+        </div>
+      </div>
+      <div class="separation1"></div>
+    </div>
+  </div>
+  <footer>
+      <div class="question">Questions? Call 000-800-919-1694</div>
+      <div class="footer">
+        <div class="footer-item">
+          <a href="FAQ">FAQ</a>
+          <a href="FAQ">Privacy</a>
+          <a href="FAQ">Corporate Information</a>
+          <a href="FAQ">Speed Test</a>
+        </div>
+
+        <div class="footer-item">
+          <a href="FAQ">Only on Tech Panda</a>
+          <a href="FAQ">Help Centre</a>
+          <a href="FAQ">Media Centre</a>
+          <a href="FAQ">Jobs</a>
+        </div>
+
+        <div class="footer-item">
+          <a href="FAQ">Terms of Use</a>
+          <a href="FAQ">Cookie Preferences</a>
+          <a href="FAQ">Contact Us</a>
+          <a href="FAQ">Legal Notices</a>
+        </div>
+
+        <div class="footer-item">
+          <a href="FAQ">Account</a>
+          <a href="FAQ">Invester Relations</a>
+          <a href="FAQ">Ways To Use</a>
+        </div>
+      </div>
+    </footer>
+
+<script>
+    // Define dummy data array
+    const dummyData = [
+      {
+        name: "Curpsed Salad",
+        image: "https://img.freepik.com/premium-photo/plate-food-with-bowl-vegetables-bowl-broccoli_865967-41862.jpg ",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+      {
+      name: "Curpsed",
+        image: "https://t4.ftcdn.net/jpg/02/75/39/23/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+      {
+      name: "Curpsed",
+        image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?cs=srgb&dl=pexels-ella-olsson-1640772.jpg&fm=jpg",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+      {
+      name: "Curpsed",
+        image: "https://www.shutterstock.com/shutterstock/photos/345618041/display_1500/stock-photo-indian-or-hindu-veg-thali-also-known-as-food-platter-is-a-complete-lunch-dinner-meal-closeup-345618041.jpg",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+
+      // nonveg
+      {
+      name: "Curpsed",
+        image: "https://media.istockphoto.com/id/494350327/photo/mutton-curry.jpg?s=612x612&w=0&k=20&c=hVHgWtkKFsQKorKVk30RabALq_09gJR0TsU4P0RZDfg=",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+      {
+      name: "Curpsed",
+        image: "https://www.shutterstock.com/image-photo/top-view-malabar-chicken-curry-260nw-764942548.jpg",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+      {
+      name: "Curpsed",
+        image: "https://t3.ftcdn.net/jpg/01/93/91/32/360_F_193913273_m18uxjyykl65LMtM4bC5FBHxGB14grbJ.jpg",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+      {
+      name: "Curpsed",
+        image: "https://t4.ftcdn.net/jpg/01/87/57/33/360_F_187573358_rIkruVJ7wUCA8FYxonKMkLOK0WaE9bQq.jpg",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+
+      // hyg
+      {
+      name: "Curpsed",
+        image: "https://www.eatingwell.com/thmb/QYZnBgF72TIKI6-A--NyoPa6avY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/greek-salmon-bowl-f681500cbe054bb1adb607ff55094075.jpeg",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+      {
+      name: "Curpsed",
+        image: "https://images.livemint.com/img/2019/11/18/600x338/veggies-kJQF--621x414@LiveMint_1574062488344.jpg",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+      {
+      name: "Curpsed",
+        image: "https://hips.hearstapps.com/hmg-prod/images/buddha-bowl-with-avocado-egg-chickpeas-tomato-royalty-free-image-1704305837.jpg?crop=1.00xw:0.752xh;0,0.188xh&resize=640:*",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+      {
+      name: "Curpsed",
+        image: "https://www.shutterstock.com/image-photo/chef-cooking-appetizer-commercial-kitchen-260nw-450234352.jpg",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+
+      // guj
+      {
+      name: "Curpsed",
+        image: "https://img.traveltriangle.com/blog/wp-content/uploads/2018/02/DP1.jpg",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+      {
+      name: "Curpsed",
+        image: "https://media.assettype.com/outlooktraveller%2Fimport%2Foutlooktraveller%2Fpublic%2Fuploads%2Farticles%2Fexplore%2F2018%2F02%2FGujarati12_FI.jpg",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+      {
+      name: "Curpsed",
+        image: "https://www.holidify.com/images/cmsuploads/compressed/Dhokla_20180327130008.jpg",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+      {
+      name: "Curpsed",
+        image: "https://img.veenaworld.com/wp-content/uploads/2023/04/Fall-in-Love-with-Gujarati-Cuisine-A-Bucket-List-of-17-Foods-to-Try-on-Your-Trip.jpg",
+        rating: "4.5",
+        type: "Veg",
+        city: "New Delhi",
+        time: "20 mis",
+        ingredients: "Paneer, cooking oil or ghee, spices such as cumin seeds, coriander powder, turmeric powder, red chili powder, garam masala, and salt, onions, garlic, ginger, tomatoes, cream or yogurt (optional), fresh herbs like cilantro (coriander leaves) and fenugreek leaves (kasuri methi), and optional additional ingredients including vegetables such as bell peppers, peas, spinach, and potatoes, green chilies or chili paste, cashew paste or almond paste, and dried fruits like raisins or apricots.",
+        details: "A classic paneer dish is a flavorful combination of cubed paneer, aromatic spices, and a rich tomato-based sauce. Sautéed onions, garlic, and ginger form a fragrant base, while a blend of spices like cumin, coriander, turmeric, and chili powder infuse the dish with warmth and depth."
+      },
+
+      // Add more dummy data objects as needed
+    ];
+
+    // Function to get URL parameters
+    function getUrlParams(e) {
+      // Get the URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      // Get the value of the specified parameter
+      const parameterValue = urlParams.get(e);
+      return parameterValue-1;
+    }
+
+    // Function to populate data based on URL params
+    function populateData() {
+      const dishIndex = getUrlParams('no'); // Default to first dish
+      const dish = dummyData[dishIndex];
+
+      // Populate data in HTML elements
+      document.getElementById("dishImage").src = dish.image;
+      document.getElementById("dishName").textContent = dish.name;
+      document.getElementById("dishRating").innerHTML = `
+      
+      <div class="rating-time" style="display:flex"> 
+        <h1>${dish.rating}</h1>
+        <img src='http://127.0.0.1:5501/img/rating.webp'>
+        <h1>${dish.time}</h1>
+      </div>
+      `;
+      document.getElementById("dishType").textContent = dish.type;
+      document.getElementById("dishCity").textContent = dish.city;
+      document.querySelector(".ing").textContent = dish.ingredients;
+      document.querySelector(".det").textContent = dish.details;
+    }
+
+    // Call the populateData function when the page loads
+    window.addEventListener("load", populateData);
+  </script>
+</body>
+</html>

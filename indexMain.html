@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Panda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styleMain.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+  * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main {
+  background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1250px, 100vw);
+  height: 70vh;
+  position: relative;
+}
+
+.main .box {
+  height: 70vh;
+  width: 100%;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+.email-btn {
+  height: 35px;
+  width: 415px;
+  border-radius: 10px;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo h4 {
+  color: white;
+  font-family: "Baloo Bhai", cursive;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  position: fixed;
+  z-index: 10;
+  justify-content: space-between;
+  height: 90px;
+  margin-right: 100px;
+}
+.techapanda {
+  text-decoration: none;
+}
+.disheshHeading {
+  text-decoration: none;
+  color: green;
+}
+.disheshHeading h2 {
+  padding-bottom: 20px;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+/* navigation bar : logo and items */
+#logo {
+  margin: 10px 34px;
+}
+#logo img {
+  height: 50px;
+  margin: 3px 6px;
+}
+/* navigation bar : list styling */
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai", cursive;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.hero {
+  height: calc(100% - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+}
+
+.hero > :nth-child(1) {
+  font-weight: bolder;
+  font-size: 48px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.separation {
+  height: 20px;
+  background-color: green;
+  position: relative;
+  z-index: 20;
+  margin-top: 50px;
+}
+
+.btn {
+  padding: 3px 8px;
+  font-weight: 400;
+  background-color: rgba(248, 243, 243, 0.021);
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  height: 25px;
+  width: 180px;
+}
+
+.btn-red {
+  background-color: #64a415;
+  color: white;
+  padding: 3px 24px;
+  font-size: 15px;
+  border-radius: 4px;
+  font-weight: 400;
+  height: 35px;
+  border-radius: 20px;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.separation {
+  height: 5px;
+  background-color: rgb(71, 70, 70);
+  position: relative;
+  z-index: 20;
+}
+
+.main-body {
+  width: 80%;
+  margin: auto;
+}
+
+/* Style for the container holding the images */
+.image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Style for the container that scrolls */
+.scrolling-container {
+  display: flex;
+  animation: scroll 10s linear infinite; /* Adjust the duration as needed */
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  50%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+/* Style for individual images */
+.scrolling-container img {
+  width: 100%; /* Ensure images take up full width of container */
+  height: 160px; /* Maintain aspect ratio */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box {
+  height: 250px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.dishesh {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.dishesh-heading {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 10px;
+  color: green;
+}
+
+.nonveg {
+  color: #b80000;
+}
+
+.hygenic {
+  color: rgb(73, 158, 191);
+}
+
+.gujarati {
+  color: rgb(45, 43, 159);
+}
+
+.disheshHeading {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dishesh-main {
+  width: 80%;
+  margin: auto;
+}
+
+.dishesh-main-text {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #b80000;
+}
+
+.dishesh-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dishesh-img img {
+  height: 160px;
+  width: 130px;
+}
+
+.box img {
+  height: 60%;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.rating img {
+  height: 15px;
+  width: 15px;
+}
+
+.box img:hover {
+  transform: scale(1.1);
+  transition-duration: 200ms;
+}
+
+.box_title_container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.box_title {
+  color: orange;
+}
+
+.faq {
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+.faq-Heading {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.faq h2 {
+  font-weight: 500;
+  font-size: 40px;
+}
+.accordion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 60px auto;
+  width: 150%;
+  max-width: 750px;
+}
+.accordion li {
+  list-style: none;
+  width: 150%;
+  padding: 5px;
+}
+.accordion li label {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: rgb(255, 166, 0);
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+}
+label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+input[type="radio"] {
+  display: none;
+}
+.accordion .content {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: rgb(88, 203, 88);
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding: 0px 20px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+  border-radius: 10px;
+}
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 600px;
+  padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after {
+  transform: rotate(135deg);
+}
+.faq .email-signup {
+  max-width: 600px;
+  margin: 20px auto 60px;
+}
+.faq small {
+  font-size: 13px;
+}
+
+.job {
+  /* display: flex; */
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+  color: brown;
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  /* padding: 10px;
+  margin: 0px;
+  gap: 20px;
+  color: blue; */
+}
+.button {
+  color: #64a415;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  gap: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.585);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.job-btn-1 {
+  background-color: #4477ce;
+  height: 40px;
+  width: 100px;
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.job-btn-2 {
+  background-color: #4477ce;
+  height: 40px;
+  width: 100px;
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  margin: auto;
+  padding: 34px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
+footer .question {
+  padding: 34px;
+}
+
+.sub-main {
+  display: flex;
+  gap: 20px;
+}
+
+.dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Dropdown button */
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            font-family: "Baloo Bhai", cursive;
+            font-weight: bold;
+            
+        }
+
+        .dropdown-content:hover{
+          background-color: white;
+          height: 20px;
+          width: 20px;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+}
+
+#navbar ul{
+  margin-right: 90px;
+}
+
+</style>
+</head>
+
+<body>
+  <div class="main">
+    <nav id="navbar">
+      <div id="logo">
+          <div class="logo-box">
+          <img src="http://127.0.0.1:5501/img/logo.png" alt="MyOnlineMeal.com">
+          <a class="techapanda" href="./indexMain.html">
+            <h4>Tech Panda</h4>
+          </a>
+          </div>
+      </div>
+
+      <ul>
+          <li class="item"><a href="#home">Home</a></li>
+          <li class="item"><a href="login.html">Log In</a></li>
+          <li class="item"><a href="#client-section">Help</a></li>
+          <li class="item"><a href="cart.html">Cart</a></li>
+          <li class="item"><a href="timetable.html">TimeTable</a></li>
+          <li class="item"><a href="#">Job<div class="dropdown">
+            <button class="dropbtn">
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="house-women.html">Housewives</a>
+                <a href="delivary-man.html">Delivery Boy</a>
+            </div></div></a></li>
+          <li class="item"></li>
+      </ul>
+  </nav>
+    <div class="box">
+    </div>
+    <div class="hero">
+        <span>Welcome To Tech Panda !!</span>
+        <span>Eat anywhere. Eat anytime.</span>
+        <span>Ready to eat? Enter your email to create or restart your membership.</span>
+        <div class="hero-buttons">
+            <input class="email-btn" type="email" placeholder="Enter Your Email">
+            <button class="btn btn-red">Get Started &gt;</button>
+        </div>
+    </div>
+    <div class="separation"></div>
+</div>
+
+  <div class="main-body">
+    <div class="dishesh-main">
+      <h2 class="dishesh-main-text ">What's On Your Mind ?</h2>
+      <div class="image-container">
+        <div class="scrolling-container">
+            <!-- Add your images here -->
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png" alt="Image 1">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029860/PC_Creative%20refresh/3D_bau/banners_new/Sandwich.png" alt="Image 2">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029851/PC_Creative%20refresh/3D_bau/banners_new/Ice_Creams.png" alt="Image 3">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029848/PC_Creative%20refresh/3D_bau/banners_new/Chinese.png" alt="Image 1">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029845/PC_Creative%20refresh/3D_bau/banners_new/Cakes.png" alt="Image 2">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029852/PC_Creative%20refresh/3D_bau/banners_new/Momos.png" alt="Image 3">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029858/PC_Creative%20refresh/3D_bau/banners_new/Pure_Veg.png" alt="Image 1">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029851/PC_Creative%20refresh/3D_bau/banners_new/Ice_Creams.png" alt="Image 2">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029848/PC_Creative%20refresh/3D_bau/banners_new/Chinese.png" alt="Image 3">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029843/PC_Creative%20refresh/3D_bau/banners_new/Vada_Pav.png" alt="Image 1">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/North_Indian_4.png" alt="Image 2">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029846/PC_Creative%20refresh/3D_bau/banners_new/Coffee.png" alt="Image 3">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029844/PC_Creative%20refresh/3D_bau/banners_new/Lassi.png" alt="Image 1">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029853/PC_Creative%20refresh/3D_bau/banners_new/Paratha.png" alt="Image 2">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029851/PC_Creative%20refresh/3D_bau/banners_new/Khichdi.png" alt="Image 3">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029855/PC_Creative%20refresh/3D_bau/banners_new/Noodles.png" alt="Image 1">
+        </div>
+    </div>
+    
+    </div>
+    <div class="container">
+      <div class="vagetarian-dishesh">
+        <a class="disheshHeading veg" href="indexVagetarian.html">
+          <h2 >Top Vagatarian Dishesh</h2>
+        </a>
+        <div class="dishesh">
+
+          <div class="box box-1">
+            <a href="orderPage.html?no=1">
+              <img src="https://img.freepik.com/premium-photo/plate-food-with-bowl-vegetables-bowl-broccoli_865967-41862.jpg ">
+            </a>
+            <div class="box_title_container">
+              <h2 class="box_title">Caprese Salad:</h2>
+              <div class="rating">
+                <h3>4.1 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 36 min</h3>
+              </div>
+              <p>Vagetable</p>
+              <p>Ahmedabad</p>
+            </div>
+          </div>
+
+
+          <div class="box box-2">
+            <div class="box box-1">
+              <a href="orderPage.html?no=2">
+
+                <img src="https://t4.ftcdn.net/jpg/02/75/39/23/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg" alt="" />
+              </a>
+              <div class="box_title_container">
+                <h2 class="box_title">Vegetable Stir-Fry</h2>
+                <div class="rating">
+                  <h3>4.0 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 32 min</h3>
+                </div>
+                <p>Vagetable</p>
+                <p>Vadodara</p>
+              </div>
+            </div>
+          </div>
+          <div class="box box-3">
+            <div class="box box-1"><a href="/newcode/orderPage.html?no=3">
+
+                <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?cs=srgb&dl=pexels-ella-olsson-1640772.jpg&fm=jpg" alt="" />
+              </a>
+              <div class="box_title_container">
+                <h2 class="box_title">Falafel</h2>
+                <div class="rating">
+                  <h3>4.3 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 38 min</h3>
+                </div>
+                <p>Vagetable</p>
+                <p>Surat</p>
+              </div>
+            </div>
+          </div>
+          <div class="box box-4">
+            <div class="box box-1">
+              <a href="orderPage.html?no=4">
+
+                <img src="https://www.shutterstock.com/shutterstock/photos/345618041/display_1500/stock-photo-indian-or-hindu-veg-thali-also-known-as-food-platter-is-a-complete-lunch-dinner-meal-closeup-345618041.jpg" alt="" />
+              </a>
+              <div class="box_title_container">
+                <h2 class="box_title">Vegetable Lasagna</h2>
+                <div class="rating">
+                  <h3>4.8 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 42 min</h3>
+                </div>
+                <p>Vagetable</p>
+                <p>Deesa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="non-vagetarian-dishesh">
+        <a class="disheshHeading nonveg" href="nonveg.html">
+          <h2 >Top Non Vagatarian Dishesh</h2>
+        </a>
+        <div class="dishesh">
+          <div class="box box-5">
+            <div class="box box-1">
+              <a href="orderPage.html?no=5">
+
+                <img src="https://media.istockphoto.com/id/494350327/photo/mutton-curry.jpg?s=612x612&w=0&k=20&c=hVHgWtkKFsQKorKVk30RabALq_09gJR0TsU4P0RZDfg=" alt="" />
+              </a>
+              <div class="box_title_container">
+                <h2 class="box_title">Grilled Steak</h2>
+                <div class="rating">
+                  <h3>4.5 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 39 min</h3>
+                </div>
+                <p>Non Vagetable</p>
+                <p>Surendranagar</p>
+              </div>
+            </div>
+          </div>
+          <div class="box box-6">
+            <div class="box box-1">
+              <a href="orderPage.html?no=6">
+                <img src="https://www.shutterstock.com/image-photo/top-view-malabar-chicken-curry-260nw-764942548.jpg" alt="" />
+              </a>
+              <div class="box_title_container">
+                <h2 class="box_title">Shrimp Scampi</h2>
+                <div class="rating">
+                  <h3>4.3 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 35 min</h3>
+                </div>
+                <p>Non Vagetable</p>
+                <p>Rajkot</p>
+              </div>
+            </div>
+          </div>
+          <div class="box box-7">
+            <div class="box box-1">
+              <a href="orderPage.html?no=7">
+                <img src="https://t3.ftcdn.net/jpg/01/93/91/32/360_F_193913273_m18uxjyykl65LMtM4bC5FBHxGB14grbJ.jpg" alt="" />
+              </a>
+              <div class="box_title_container">
+                <h2 class="box_title">Beef Wellington</h2>
+                <div class="rating">
+                  <h3>4.4 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 27 min</h3>
+                </div>
+                <p>Non Vagetable</p>
+                <p>Navsarit</p>
+              </div>
+            </div>
+          </div>
+          <div class="box box-8">
+            <div class="box box-1">
+              <a href="orderPage.html?no=8">
+                <img src="https://t4.ftcdn.net/jpg/01/87/57/33/360_F_187573358_rIkruVJ7wUCA8FYxonKMkLOK0WaE9bQq.jpg" alt="" />
+              </a>
+              <div class="box_title_container">
+                <h2 class="box_title">Lamb Tagine</h2>
+                <div class="rating">
+                  <h3>3.9 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 40 min</h3>
+                </div>
+                <p>Non Vagetable</p>
+                <p>Patan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="un-hygrnic-dishesh">
+        <a class="disheshHeading hygenic" href="hygenic.html">
+          <h2 >Top Hyegnic Dishesh</h2>
+        </a>
+        <div class="dishesh">
+          <div class="box box-9">
+            <div class="box box-1">
+              <a href="orderPage.html?no=9">
+
+                <img src="https://www.eatingwell.com/thmb/QYZnBgF72TIKI6-A--NyoPa6avY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/greek-salmon-bowl-f681500cbe054bb1adb607ff55094075.jpeg" alt="" />
+              </a>
+              <div class="box_title_container">
+                <h2 class="box_title">Steamed Vegetables</h2>
+                <div class="rating">
+                  <h3>4.7 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 30 min</h3>
+                </div>
+                <p>Hygenic</p>
+                <p>Anand</p>
+              </div>
+            </div>
+          </div>
+          <div class="box box-10">
+            <div class="box box-1">
+              <a href="orderPage.html?no=10">
+
+                <img src="https://images.livemint.com/img/2019/11/18/600x338/veggies-kJQF--621x414@LiveMint_1574062488344.jpg" alt="" />
+              </a>
+              <div class="box_title_container">
+                <h2 class="box_title">Baked Salmon</h2>
+                <div class="rating">
+                  <h3>4.4 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 23 min</h3>
+                </div>
+                <p>Hygenic</p>
+                <p>Mehsana</p>
+              </div>
+            </div>
+          </div>
+          <div class="box box-11">
+            <div class="box box-1">
+              <a href="orderPage.html?no=11">
+
+                <img src="https://hips.hearstapps.com/hmg-prod/images/buddha-bowl-with-avocado-egg-chickpeas-tomato-royalty-free-image-1704305837.jpg?crop=1.00xw:0.752xh;0,0.188xh&resize=640:*" alt="" />
+              </a>
+              <div class="box_title_container">
+                <h2 class="box_title">Vegetable Soup</h2>
+                <div class="rating">
+                  <h3>4.5 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 28 min</h3>
+                </div>
+                <p>Hygenic</p>
+                <p>Jamnagar</p>
+              </div>
+            </div>
+          </div>
+          <div class="box box-12">
+            <div class="box box-1">
+              <a href="orderPage.html?no=12">
+
+                <img src="https://www.shutterstock.com/image-photo/chef-cooking-appetizer-commercial-kitchen-260nw-450234352.jpg" alt="" />
+              </a>
+              <div class="box_title_container">
+                <h2 class="box_title">Poached Chicken Breast</h2>
+                <div class="rating">
+                  <h3>4.3 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 35 min</h3>
+                </div>
+                <p>Hygenic</p>
+                <p>Gandhinagar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="un-hygrnic-dishesh">
+        <a  class="disheshHeading gujarati" href="gujarati.html">
+          <h2 >Top Gujarati Dishesh</h2>
+        </a>
+        <div class="dishesh">
+          <div class="box box-13">
+            <div class="box box-1">
+              <a href="orderPage.html?no=13">
+
+                <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/02/DP1.jpg" alt="" />
+              </a>
+              <div class="box_title_container">
+                <h2 class="box_title">Khandvi</h2>
+                <div class="rating">
+                  <h3>4.6 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 33 min</h3>
+                </div>
+                <p>Gujarati</p>
+                <p>Kutch</p>
+              </div>
+            </div>
+          </div>
+          <div class="box box-14">
+            <div class="box box-1">
+              <a href="orderPage.html?no=14">
+
+                <img src="https://media.assettype.com/outlooktraveller%2Fimport%2Foutlooktraveller%2Fpublic%2Fuploads%2Farticles%2Fexplore%2F2018%2F02%2FGujarati12_FI.jpg" alt="" />
+              </a>
+              <div class="box_title_container">
+                <h2 class="box_title">Mishthan</h2>
+                <div class="rating">
+                  <h3>4.8 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 45 min</h3>
+                </div>
+                <p>Gujarati</p>
+                <p>Junagadh</p>
+              </div>
+            </div>
+          </div>
+          <div class="box box-15">
+            <div class="box box-1">
+              <a href="orderPage.html?no=15">
+
+                <img src="https://www.holidify.com/images/cmsuploads/compressed/Dhokla_20180327130008.jpg" alt="" />
+              </a>
+              <div class="box_title_container">
+                <h2 class="box_title">Thali</h2>
+                <div class="rating">
+                  <h3>4.9 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 31 min</h3>
+                </div>
+                <p>Gujarati</p>
+                <p>Ahmedabad</p>
+              </div>
+            </div>
+          </div>
+          <div class="box box-16">
+            <div class="box box-1">
+              <a href="orderPage.html?no=16">
+
+                <img src="https://img.veenaworld.com/wp-content/uploads/2023/04/Fall-in-Love-with-Gujarati-Cuisine-A-Bucket-List-of-17-Foods-to-Try-on-Your-Trip.jpg" alt="" />
+              </a>
+              <div class="box_title_container">
+                <h2 class="box_title">Jalebi Fafda</h2>
+                <div class="rating">
+                  <h3>5.0 <img src="http://127.0.0.1:5501/img/rating.webp" alt="" /> 30 min</h3>
+                </div>
+                <p>Gujarati</p>
+                <p>Ahmedabad</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="un-hygrnic-dishesh">
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="faq">
+    <h2 class="faq-Heading">Frequantly Asked Question</h2>
+
+    <ul class="accordion">
+      <li>
+        <input type="radio" name="accordion" id="first" />
+        <label for="first">What is Tech Panda?</label>
+        <div class="content">
+          <p>
+            Tech Panda isn't your ordinary food website. We're a platform
+            where technology meets culinary delights. We blend the latest
+            innovations in food tech with delicious recipes, kitchen gadgets,
+            and culinary trends. From exploring how AI is revolutionizing
+            cooking to reviewing the hottest kitchen appliances, Tech Panda is
+            your go-to destination for everything at the intersection of food
+            and technology.
+          </p>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="accordion" id="second" />
+        <label for="second">How much does Tech Panda cost?</label>
+        <div class="content">
+          <p>
+            Tech Panda is completely free to access! You can enjoy all our
+            content, recipes, reviews, and tech insights without any cost.
+            We're committed to providing valuable information and inspiration
+            to food and tech enthusiasts alike, at no charge.
+          </p>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="accordion" id="third" />
+        <label for="third">Where can I Eat?</label>
+        <div class="content">
+          <p>
+            At Tech Panda, we're all about exploring the culinary world, but
+            we don't offer specific dining locations. However, we do provide a
+            plethora of recipes, restaurant reviews, and food trends to
+            inspire your dining adventures! Whether you're looking for a cozy
+            café, a trendy bistro, or a top-notch fine dining experience, we
+            offer recommendations and tips to help you find the perfect place
+            to satisfy your cravings.
+          </p>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="accordion" id="fourth" />
+        <label for="fourth">How do I Order?</label>
+        <div class="content">
+          <p>
+            At Tech Panda, we focus on providing information and inspiration
+            rather than facilitating orders directly. However, we do offer
+            tips and guides on various ordering methods depending on your
+            preferences and location. Whether it's through online delivery
+            platforms, phone calls to restaurants, or even in-person dining
+            experiences, we provide advice to help streamline your ordering
+            process and ensure a seamless culinary experience.
+          </p>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="accordion" id="fifth" />
+        <label for="fifth">What can I Eat On Tech Panda?</label>
+        <div class="content">
+          <p>
+            Tech Panda offers a diverse range of culinary content to suit
+            every taste bud! You can explore a variety of recipes ranging from
+            quick and easy meals to gourmet delights, dietary-specific dishes,
+            international cuisines, and indulgent desserts. Additionally, we
+            provide insights into food technology, kitchen gadgets, product
+            reviews, restaurant recommendations, and much more. Whether you're
+            a seasoned chef or a novice cook, there's something delicious
+            waiting for you on Tech Panda!
+          </p>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="accordion" id="sixth" />
+        <label for="sixth">Is Tech Panda good Or Bad?</label>
+        <div class="content">
+          <p>
+            Here at Tech Panda, we strive to provide valuable and engaging
+            content for food and technology enthusiasts alike. Our aim is to
+            offer insightful articles, delicious recipes, and helpful
+            resources to enhance your culinary journey. However, whether Tech
+            Panda is 'good' or 'bad' ultimately depends on your personal
+            experience and perspective. We encourage you to explore our
+            content and decide for yourself if Tech Panda meets your
+            expectations and satisfies your interests in the intersection of
+            food and technology.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+    
+  <footer>
+    <div class="question">Questions? Call 000-800-919-1694</div>
+    <div class="footer">
+      <div class="footer-item">
+        <a href="FAQ">FAQ</a>
+        <a href="FAQ">Privacy</a>
+        <a href="FAQ">Corporate Information</a>
+        <a href="FAQ">Speed Test</a>
+      </div>
+
+      <div class="footer-item">
+        <a href="FAQ">Only on Tech Panda</a>
+        <a href="FAQ">Help Centre</a>
+        <a href="FAQ">Media Centre</a>
+        <a href="FAQ">Jobs</a>
+      </div>
+
+      <div class="footer-item">
+        <a href="FAQ">Terms of Use</a>
+        <a href="FAQ">Cookie Preferences</a>
+        <a href="FAQ">Contact Us</a>
+        <a href="FAQ">Legal Notices</a>
+      </div>
+
+      <div class="footer-item">
+        <a href="FAQ">Account</a>
+        <a href="FAQ">Invester Relations</a>
+        <a href="FAQ">Ways To Use</a>
+      </div>
+    </div>
+  </footer>
+  <script src="scriptMain.js"></script>
+</body>
+</html>

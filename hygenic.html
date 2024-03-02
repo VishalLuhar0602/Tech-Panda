@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hygenic Dishesh</title>
+    <style>
+  .main-body {
+  width: 90%;
+  margin: auto;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.techpanda{
+  text-decoration: none;
+}
+
+.dishesh-heading {
+  font-style: normal;
+  margin-bottom: 10px;
+  margin-left: 38%;
+  color: rgb(73, 158, 191);
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h4 {
+  color: white;
+  font-family: "Baloo Bhai", cursive;
+}
+
+nav img {
+  width: 50px;
+  position: relative;
+  z-index: 10;
+}
+
+.nav ul {
+  display: flex;
+  font-family: "Baloo Bhai", cursive;
+}
+
+.nav ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+.nav ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.nav ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 70px;
+}
+
+.box {
+  height: 250px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.dishesh {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.dishesh-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 10px;
+  margin-left: 38%;
+}
+
+.dishesh-main {
+  width: 80%;
+  margin: auto;
+}
+
+.dishesh-main-text {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.dishesh-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dishesh-img img {
+  height: 160px;
+  width: 130px;
+}
+
+.box img {
+  height: 60%;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.rating img {
+  height: 15px;
+  width: 15px;
+}
+
+/* .rating-text{
+    margin-bottom: 1px;
+    margin-top: 10px;
+  } */
+
+.rating {
+  margin-top: -10px;
+}
+
+.para-1 {
+  margin-top: -13px;
+}
+
+.para-2 {
+  margin-top: -12px;
+}
+
+.box img:hover {
+  transform: scale(1.1);
+  transition-duration: 200ms;
+}
+
+.box_title_container {
+  display: flex;
+  flex-direction: column;
+  padding: -0.5rem;
+}
+
+.box_title {
+  color: orange;
+  /* margin: 5px; */
+  height: 1px;
+  margin-top: 1px;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  margin: auto;
+  padding: 34px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
+footer .question {
+  padding: 34px 0;
+}
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav">
+        <span
+          ><div class="logo">
+            <img width="53" src="http://127.0.0.1:5501/img/logo.png" alt="Home pages" />
+            <a class="techpanda" href="indexMain.html">
+                <h4>Tech Panda</h4>
+              </a>
+          </div>
+        </span>
+        <ul>
+          <li class="item"><a href="#home"> Search</a></li>
+          <li class="item"><a href="/login.html">Log In</a></li>
+          <li class="item"><a href="#client-section">Help</a></li>
+          <li class="item"><a href="cart.html">Cart</a></li>
+          <li class="item"><a href="timetable.html">Timetable</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-body">
+      <div class="container">
+        <div class="vagetarian-dishesh">
+          <h2 class="dishesh-heading"> Hygenic Dishesh</h2>
+          <div class="dishesh">
+            <div class="box box-1">
+              <img src="https://assets.zeezest.com/images/PROD_2_1662611636261_thumb_800.jpeg?w=3840&q=75" alt="" />
+              <div class="box_title_container">
+                <h2 class="box_title">salad</h2>
+                <div class="rating">
+                  <h3 class="rating-text">4.1 <img src="/images/rating.webp" alt="" /> 16 min</h3>
+                </div>
+                <div class="card_paragraph">
+                    <p class="para-1" >Hygenic</p>
+                    <p class="para-2" >palanpur</p>
+                  </div>
+              </div>
+            </div>
+            <div class="box box-2">
+              <div class="box box-1">
+                <img src="https://t4.ftcdn.net/jpg/02/75/39/23/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">
+                    Fruit salad</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.6 <img src="/images/rating.webp" alt="" /> 20 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                      <p class="para-1" >Hygenic</p>
+                      <p class="para-2" >Banglore</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-3">
+              <div class="box box-1">
+                <img src="https://images.unsplash.com/photo-1598030304671-5aa1d6f21128?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHZlZ2V0YWJsZXN8ZW58MHx8MHx8fDA%3D" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title"> Fruit salad</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.1 <img src="/images/rating.webp" alt="" /> 10 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Hygenic</p>
+                    <p class="para-2" >pune </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-4">
+              <div class="box box-1">
+                <img src="https://thumbs.dreamstime.com/b/fruits-vegetables-15528773.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">tamata salad</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.2 <img src="/images/rating.webp" alt="" /> 9 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Hygenic</p>
+                    <p class="para-2" >Panjab</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="non-vagetarian-dishesh">
+          <div class="dishesh">
+            <div class="box box-5">
+              <div class="box box-1">
+                <img src="https://www.shutterstock.com/shutterstock/photos/127523375/display_1500/stock-photo-indian-food-in-brass-bowl-127523375.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">salad</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.4 <img src="/images/rating.webp" alt="" />18 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Hygenic</p>
+                    <p class="para-2" >bangel</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-6">
+              <div class="box box-1">
+                <img src="https://img.lovepik.com/photo/48014/8691.jpg_wh860.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title"> Fruit salad
+                  </h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.4 <img src="/images/rating.webp" alt="" /> 25 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Hygenic</p>
+                    <p class="para-2" >kolkata</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-7">
+              <div class="box box-1">
+                <img src="https://i.pinimg.com/736x/4b/9c/01/4b9c01a42d8acf69d5bbbb73904e3e54.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title"> Fruit salad</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.7 <img src="/images/rating.webp" alt="" /> 11 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Hygenic</p>
+                    <p class="para-2" >tharavi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-8">
+              <div class="box box-1">
+                <img src="https://cdn.pixabay.com/photo/2015/12/09/17/11/vegetables-1085063_640.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Gujrati salad</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.6 <img src="/images/rating.webp" alt="" /> 15 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Hygenic</p>
+                    <p class="para-2" >chennai</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="un-hygrnic-dishesh">
+          <div class="dishesh">
+            <div class="box box-9">
+              <div class="box box-1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs32QpUigkgLnZthS-KybA5lqs6rIbYaE-VA&usqp=CAU" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">gajar salad </h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.1 <img src="/images/rating.webp" alt="" /> 14 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Hygenic</p>
+                    <p class="para-2" >Kalupur</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-10">
+              <div class="box box-1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUnEBN8QhoHFeqBWw6GCT5klwNHg27S-HbIg&usqp=CAU" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title"> namkeen salad</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.0 <img src="/images/rating.webp" alt="" /> 12 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class=" para-1" >Hygenic</p>
+                    <p class="para-2" >Bapunagar </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-11">
+              <div class="box box-1">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/013/000/914/small/sheep-leg-cooked-over-charcoal-in-india-photo.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Gujrati salad</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.2 <img src="/images/rating.webp" alt="" /> 17 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Hygenic</p>
+                    <p class="para-2" >mumbai</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-12">
+              <div class="box box-1">
+                <img src="https://t4.ftcdn.net/jpg/02/75/39/23/360_F_275392381_9upAWW5Rdsa4UE0CV6gRu2CwUETjzbKy.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">american salad</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.8 <img src="/images/rating.webp" alt="" /> 19 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Hygenic</p>
+                    <p class="para-2" >Rajkot</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="un-hygrnic-dishesh">
+          <div class="dishesh">
+            <div class="box box-13">
+              <div class="box box-1">
+                <img src="https://thumbs.dreamstime.com/b/fruits-vegetables-15528773.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title"> Fruites salad</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.5 <img src="/images/rating.webp" alt="" /> 16 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Hygenic</p>
+                    <p class="para-2" >Rajkot</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-14">
+              <div class="box box-1">
+                <img src="https://www.shutterstock.com/shutterstock/photos/127523375/display_1500/stock-photo-indian-food-in-brass-bowl-127523375.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">gajar ka halwa</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.6 <img src="/images/rating.webp" alt="" /> 20 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Hygenic</p>
+                    <p class="para-2" >Hariyana</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-15">
+              <div class="box box-1">
+                <img src="https://i.pinimg.com/736x/4b/9c/01/4b9c01a42d8acf69d5bbbb73904e3e54.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">barry </h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.9 <img src="/images/rating.webp" alt="" /> 16 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Hygenic</p>
+                    <p class="para-2" >Jamnagar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-16">
+              <div class="box box-1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUnEBN8QhoHFeqBWw6GCT5klwNHg27S-HbIg&usqp=CAU" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">special salad</h2>
+                  <div class="rating">
+                    <h3 class="rating-text" >4.1 <img src="/images/rating.webp" alt="" /> 19 min</h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1" >Hygenic</p>
+                    <p class="para-2" >Ahmedabad</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="un-hygrnic-dishesh"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="question">Questions? Call 000-800-919-1694</div>
+      <div class="footer">
+        <div class="footer-item">
+          <a href="FAQ">FAQ</a>
+          <a href="FAQ">Privacy</a>
+          <a href="FAQ">Corporate Information</a>
+          <a href="FAQ">Speed Test</a>
+        </div>
+
+        <div class="footer-item">
+          <a href="FAQ">Only on Tech Panda</a>
+          <a href="FAQ">Help Centre</a>
+          <a href="FAQ">Media Centre</a>
+          <a href="FAQ">Jobs</a>
+        </div>
+
+        <div class="footer-item">
+          <a href="FAQ">Terms of Use</a>
+          <a href="FAQ">Cookie Preferences</a>
+          <a href="FAQ">Contact Us</a>
+          <a href="FAQ">Legal Notices</a>
+        </div>
+
+        <div class="footer-item">
+          <a href="FAQ">Account</a>
+          <a href="FAQ">Invester Relations</a>
+          <a href="FAQ">Ways To Use</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

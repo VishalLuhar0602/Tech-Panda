@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styleMain.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="nonveg.css">
+    <title>Document</title>
+    <style>
+      .main-body {
+    width: 90%;
+    margin: auto;
+  }
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    background-color: black;
+    opacity: 0.7;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.585);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 10px;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo h4 {
+    color: white;
+    font-family: "Baloo Bhai", cursive;
+  }
+  
+  nav img {
+    width: 50px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .nav ul {
+    display: flex;
+    font-family: "Baloo Bhai", cursive;
+  }
+  
+  .nav ul li {
+    list-style: none;
+    font-size: 1.3rem;
+  }
+  .nav ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  .nav ul li a:hover {
+    color: black;
+    background-color: white;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 70px;
+  }
+  
+  .box {
+    height: 250px;
+    width: 300px;
+    border-radius: 20px;
+  }
+  
+  .dishesh {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .techpanda{
+    text-decoration: none;
+  }
+  
+  .dishesh-heading {
+    /* font-family: "Roboto", sans-serif;
+    font-weight: 400; */
+    font-style: normal;
+    margin-bottom: 10px;
+    margin-left: 38%;
+    color: #b80000;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .dishesh-main {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .dishesh-main-text {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+  }
+  
+  .dishesh-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dishesh-img img {
+    height: 160px;
+    width: 130px;
+  }
+  
+  .box img {
+    height: 60%;
+    width: 90%;
+    border-radius: 10px;
+  }
+  
+  .rating img {
+    height: 15px;
+    width: 15px;
+  }
+  
+  /* .rating-text{
+      margin-bottom: 1px;
+      margin-top: 10px;
+    } */
+  
+  .rating {
+    margin-top: -10px;
+  }
+  
+  .para-1 {
+    margin-top: -13px;
+  }
+  
+  .para-2 {
+    margin-top: -12px;
+  }
+  
+  .box img:hover {
+    transform: scale(1.1);
+    transition-duration: 200ms;
+  }
+  
+  .box_title_container {
+    display: flex;
+    flex-direction: column;
+    padding: -0.5rem;
+  }
+  
+  .box_title {
+    color: orange;
+    /* margin: 5px; */
+    height: 1px;
+    margin-top: 1px;
+  }
+  
+  footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    margin: auto;
+    padding: 34px;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+  
+  footer .question {
+    padding: 34px 0;
+  }
+    </style>
+  </head>
+  <body></body>
+</html>
+<link rel="stylesheet" href="im.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Non Vagetarian Dishesh</title>
+    <link rel="stylesheet" href="im.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav">
+        <span
+          ><div class="logo">
+            <img width="53" src="http://127.0.0.1:5501/img/logo.png" alt="Home pages" />
+            <a class="techpanda" href="indexMain.html">
+              <h4 >Tech Panda</h4>
+            </a>
+          </div>
+        </span>
+        <ul>
+          <li class="item"><a href="#home"> Search</a></li>
+          <li class="item"><a href="login.html">Log In</a></li>
+          <li class="item"><a href="#client-section">Help</a></li>
+          <li class="item"><a href="cart.html">Cart</a></li>
+          <li class="item"><a href="timetable.html">Timmetable</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-body">
+      <div class="container">
+        <div class="vagetarian-dishesh">
+          <h2 class="dishesh-heading">Non Vagatarian Dishesh</h2>
+          <div class="dishesh">
+            <div class="box box-1">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUnEBN8QhoHFeqBWw6GCT5klwNHg27S-HbIg&usqp=CAU" alt="" />
+              <div class="box_title_container">
+                <h2 class="box_title">Steak</h2>
+                <div class="rating">
+                  <h3 class="rating-text">
+                    4.1 <img src="/images/rating.webp" alt="" /> 33 min
+                  </h3>
+                </div>
+                <div class="card_paragraph">
+                  <p class="para-1">non-Vagetable</p>
+                  <p class="para-2">palanpur</p>
+                </div>
+              </div>
+            </div>
+            <div class="box box-2">
+              <div class="box box-1">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/013/000/914/small/sheep-leg-cooked-over-charcoal-in-india-photo.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">biryani Dish</h2>
+                  <div class="rating">
+                    <h3 class="rating-text">
+                      4.6 <img src="/images/rating.webp" alt="" /> 36 min
+                    </h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Non-Vagetable</p>
+                    <p class="para-2">Banglore</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-3">
+              <div class="box box-1">
+                <img src="https://images.herzindagi.info/image/2022/Apr/the-excellent-Indian-non-vegetarian-foods-for-parties.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Chicken Wings</h2>
+                  <div class="rating">
+                    <h3 class="rating-text">
+                      4.1 <img src="/images/rating.webp" alt="" /> 32 min
+                    </h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Non-Vagetable</p>
+                    <p class="para-2">pune</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-4">
+              <div class="box box-1">
+                <img src="https://i.ytimg.com/vi/lQKfUcKGQuM/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDLxp008rhXoqkGcxHv5w6FucS-eQ" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">chicken-biryani Dish</h2>
+                  <div class="rating">
+                    <h3 class="rating-text">
+                      4.2 <img src="/images/rating.webp" alt="" /> 35 min
+                    </h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Non-Vagetable</p>
+                    <p class="para-2">Panjab</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="non-vagetarian-dishesh">
+          <div class="dishesh">
+            <div class="box box-5">
+              <div class="box box-1">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/015/933/743/small/chicken-lollipop-grilled-tandoori-non-veg-with-schezwan-sauce-dip-chutney-free-photo.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Chicken Wings</h2>
+                  <div class="rating">
+                    <h3 class="rating-text">
+                      4.4 <img src="/images/rating.webp" alt="" /> 39 min
+                    </h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Non-Vagetable</p>
+                    <p class="para-2">bangel</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-6">
+              <div class="box box-1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhZsUWsAuV3gneU1uzWLpLZut5G454W8lhf5cfmW-JpPrnCnJhqxg7OFrKSfC9gUjnoTI&usqp=CAU" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Pork Ribs</h2>
+                  <div class="rating">
+                    <h3 class="rating-text">
+                      4.4 <img src="/images/rating.webp" alt="" /> 40 min
+                    </h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Non-Vagetable</p>
+                    <p class="para-2">kolkata</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-7">
+              <div class="box box-1">
+                <img src="https://media.istockphoto.com/id/471614507/photo/indian-chicken-curry.jpg?s=612x612&w=0&k=20&c=uT5QbV1SD6Hux043sAhsm5IyVxAGzNt47r6nL1YyIQc=" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Salmon Fillet</h2>
+                  <div class="rating">
+                    <h3 class="rating-text">
+                      4.7 <img src="/images/rating.webp" alt="" /> 29 min
+                    </h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Non-Vagetable</p>
+                    <p class="para-2">tharavi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-8">
+              <div class="box box-1">
+                <img src="https://s2.dmcdn.net/v/NWuw_1Qx30-FpdnhX/x1080" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Beef Burger</h2>
+                  <div class="rating">
+                    <h3 class="rating-text">
+                      4.6 <img src="/images/rating.webp" alt="" /> 34 min
+                    </h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Non-Vagetable</p>
+                    <p class="para-2">chennai</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="un-hygrnic-dishesh">
+          <div class="dishesh">
+            <div class="box box-9">
+              <div class="box box-1">
+                <img src="https://static.vecteezy.com/system/resources/previews/015/933/661/large_2x/tandoori-chicken-is-an-indian-non-vegetarian-spicy-food-free-photo.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Lobster Bisque</h2>
+                  <div class="rating">
+                    <h3 class="rating-text">
+                      4.1 <img src="/images/rating.webp" alt="" /> 33 min
+                    </h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Non-Vagetable</p>
+                    <p class="para-2">Kalupur</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-10">
+              <div class="box box-1">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/013/000/914/small/sheep-leg-cooked-over-charcoal-in-india-photo.jpg" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Turkey Sandwich</h2>
+                  <div class="rating">
+                    <h3 class="rating-text">
+                      4.0 <img src="/images/rating.webp" alt="" /> 30 min
+                    </h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Non-Vagetable</p>
+                    <p class="para-2">Bapunagar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-11">
+              <div class="box box-1">
+                <img
+                  src="https://i.ytimg.com/vi/lQKfUcKGQuM/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDLxp008rhXoqkGcxHv5w6FucS-eQ"
+                  alt=""
+                />
+                <div class="box_title_container">
+                  <h2 class="box_title">Sushi containing fish</h2>
+                  <div class="rating">
+                    <h3 class="rating-text">
+                      4.2 <img src="/images/rating.webp" alt="" /> 42 min
+                    </h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Non-Vagetable</p>
+                    <p class="para-2">mumbai</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-12">
+              <div class="box box-1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUnEBN8QhoHFeqBWw6GCT5klwNHg27S-HbIg&usqp=CAU" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Ham and Cheese Croissant</h2>
+                  <div class="rating">
+                    <h3 class="rating-text">
+                      4.8 <img src="/images/rating.webp" alt="" /> 36 min
+                    </h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Non-Vagetable</p>
+                    <p class="para-2">Rajkot</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="un-hygrnic-dishesh">
+          <div class="dishesh">
+            <div class="box box-13">
+              <div class="box box-1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhZsUWsAuV3gneU1uzWLpLZut5G454W8lhf5cfmW-JpPrnCnJhqxg7OFrKSfC9gUjnoTI&usqp=CAU" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">biryani Dish</h2>
+                  <div class="rating">
+                    <h3 class="rating-text">
+                      4.5 <img src="/images/rating.webp" alt="" /> 31 min
+                    </h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Non-Vagetable</p>
+                    <p class="para-2">Delhi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-14">
+              <div class="box box-1">
+                <img src="https://media.istockphoto.com/id/471614507/photo/indian-chicken-curry.jpg?s=612x612&w=0&k=20&c=uT5QbV1SD6Hux043sAhsm5IyVxAGzNt47r6nL1YyIQc=" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Bacon Wrapped Scallops</h2>
+                  <div class="rating">
+                    <h3 class="rating-text">
+                      4.6 <img src="/images/rating.webp" alt="" /> 37 min
+                    </h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Non-Vagetable</p>
+                    <p class="para-2">Hariyana</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-15">
+              <div class="box box-1">
+                <img src="https://assets.zeezest.com/images/PROD_2_1662611636261_thumb_800.jpeg?w=3840&q=75" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Crab Cakes</h2>
+                  <div class="rating">
+                    <h3 class="rating-text">
+                      4.9 <img src="/images/rating.webp" alt="" /> 41 min
+                    </h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Non-Vagetable</p>
+                    <p class="para-2">Jamnagar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box box-16">
+              <div class="box box-1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUnEBN8QhoHFeqBWw6GCT5klwNHg27S-HbIg&usqp=CAU" alt="" />
+                <div class="box_title_container">
+                  <h2 class="box_title">Lobster Roll</h2>
+                  <div class="rating">
+                    <h3 class="rating-text">
+                      4.1 <img src="/images/rating.webp" alt="" /> 35 min
+                    </h3>
+                  </div>
+                  <div class="card_paragraph">
+                    <p class="para-1">Non-Vagetable</p>
+                    <p class="para-2">Ahmedabad</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="un-hygrnic-dishesh"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="question">Questions? Call 000-800-919-1694</div>
+      <div class="footer">
+        <div class="footer-item">
+          <a href="FAQ">FAQ</a>
+          <a href="FAQ">Privacy</a>
+          <a href="FAQ">Corporate Information</a>
+          <a href="FAQ">Speed Test</a>
+        </div>
+
+        <div class="footer-item">
+          <a href="FAQ">Only on Tech Panda</a>
+          <a href="FAQ">Help Centre</a>
+          <a href="FAQ">Media Centre</a>
+          <a href="FAQ">Jobs</a>
+        </div>
+
+        <div class="footer-item">
+          <a href="FAQ">Terms of Use</a>
+          <a href="FAQ">Cookie Preferences</a>
+          <a href="FAQ">Contact Us</a>
+          <a href="FAQ">Legal Notices</a>
+        </div>
+
+        <div class="footer-item">
+          <a href="FAQ">Account</a>
+          <a href="FAQ">Invester Relations</a>
+          <a href="FAQ">Ways To Use</a>
+        </div>
+      </div>
+    </footer>
+     
+  </body>
+</html>
